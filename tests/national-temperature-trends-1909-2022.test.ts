@@ -1,5 +1,5 @@
 import { KoordinatesDataset } from "@zhiweiliu/koordinates-base";
-import { LinzDatasets } from "../src/index";
+import { environmentNzDatasets } from "../src/index";
 import apiKey from "./api-key";
 
 const TIMEOUT: number = 60000;
@@ -8,7 +8,7 @@ const datasetName = "National Temperature, trends, 1909-2022";
 test(
   "Capabilites endpoint",
   async () => {
-    let ntt: KoordinatesDataset = LinzDatasets.find(
+    let ntt: KoordinatesDataset = environmentNzDatasets.find(
       (d) => d.getName() === datasetName
     ) as KoordinatesDataset;
     expect(ntt).not.toBe(undefined);
@@ -37,7 +37,7 @@ test(
 test(
   "Changesets endpoint",
   async () => {
-    let ntt: KoordinatesDataset = LinzDatasets.find(
+    let ntt: KoordinatesDataset = environmentNzDatasets.find(
       (d) => d.getName() === datasetName
     ) as KoordinatesDataset;
     expect(ntt).not.toBe(undefined);
@@ -60,7 +60,7 @@ test(
 test(
   "Spatial data query endpoints",
   async () => {
-    let ntt: KoordinatesDataset = LinzDatasets.find(
+    let ntt: KoordinatesDataset = environmentNzDatasets.find(
       (d) => d.getName() === datasetName
     ) as KoordinatesDataset;
     expect(ntt).not.toBe(undefined);
@@ -93,7 +93,7 @@ test(
 test(
   "Initial dataset",
   async () => {
-    let dt30sites: KoordinatesDataset = LinzDatasets.find(
+    let dt30sites: KoordinatesDataset = environmentNzDatasets.find(
       (d) => d.getName() === datasetName
     ) as KoordinatesDataset;
     expect(dt30sites).not.toBe(undefined);

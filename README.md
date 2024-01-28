@@ -15,13 +15,13 @@ The repository provides access to Environment for New Zealand datasets hosted by
 ```typescript
 // import Koordinates modules
 import { KoordinatesDataset } from "@zhiweiliu/koordinates-base";
-import { LinzDatasets } from "koordinates-environment-nz";
+import { environmentNzDatasets } from "koordinates-environment-nz";
 
 // Koordinates API key, it is recommended to load it at run time instead of hard-coding it in a file
 import apiKey from "./api-key";
 
 // Find dataset
-let dt30Sites: KoordinatesDataset = LinzDatasets.find(
+let dt30Sites: KoordinatesDataset = environmentNzDatasets.find(
   (d) => d.getName() === "Daily temperature 30 sites, state, 1909 - 2022"
 ) as KoordinatesDataset;
 

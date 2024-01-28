@@ -3,7 +3,7 @@ export let environmentNzHost: string = "https://data.mfe.govt.nz";
 export let initialDatasetLocation: string =
   "https://s3.ap-southeast-2.amazonaws.com/environment-nz-datasets.zhiweiliu.com";
 
-export let LinzDatasets = [
+export let environmentNzDatasets = [
   new KoordinatesDataset({
     koordinatesHost: environmentNzHost,
     name: "Daily temperature 30 sites, state, 1909 - 2022",
