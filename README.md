@@ -5,6 +5,10 @@ The repository provides access to Environment for New Zealand datasets hosted by
 ## Supported datasets
 
 - Daily temperature 30 sites, state, 1909 - 2022
+- Annual and seasonal temperatures at 30 sites, trends, 1972-2022
+- Annual and seasonal temperatures at 30 sites, state 1972 - 2022
+- National Temperature, trends, 1909-2022
+- National temperature, state, 1909-2022
 
 ## Example
 
